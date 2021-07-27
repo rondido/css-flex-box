@@ -1,15 +1,21 @@
-.wrapper{
+.father{
     display:flex;
     /*main Axis*/
     justify-content:space-around;
-    /*Cross Axis*/
-    align-items:center;
-    height:200vh;
+    align-content:space-between;
+    height:100vh;
+    flex-wrap:wrap;
 }
-.box{
+.child{
     width:200px;
     height:200px;
     background:peru;
     color:white;
     font-size:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center
 }
+
+
+
