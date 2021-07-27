@@ -2,12 +2,10 @@
     display:flex;
     /*main Axis*/
     justify-content:space-around;
-    align-content:space-between;
-    height:100vh;
-    flex-wrap:wrap;
+    width:100%;
 }
 .child{
-    width:200px;
+    width:300px;
     height:200px;
     background:peru;
     color:white;
@@ -16,6 +14,12 @@
     justify-content:center;
     align-items:center
 }
-
+.child:nth-child(2){
+    background:black;
+    flex-grow:2;
+}
+.child:nth-child(3){
+    flex-grow:1;
+}
 
 
