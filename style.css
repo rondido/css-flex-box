@@ -6,28 +6,22 @@
 }
 .header{
     background-color:#2ecc71;
-    grid-column-start:1;
-    grid-column-end:5;
+    grid-column: 1 / -1;  /*시작 과 끝만 알면 편하게 쓸 수 있따 라인수를 상관하지 않고*/
 }
 
 .content{
     background-color:#3498db;
-    grid-column-start:1;
-    grid-column-end:4;
-    grid-row-start:2;
-    grid-row-end:4;
-
+    grid-column:1 /4; /*grid start end를 지정하는거와 같다*/
+    grid-row: span 2;
 }
 
 .nav{
     background-color:#8e44ad;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row: span 2;
 }
 
 .footer{
     background-color:#f39c12;
-    grid-column-start:1;
-    grid-column-end:5;
+    grid-column: span 4;    /*cell의 공간만 알고 있으면 사용 할 수 있다.*/
 }
 
