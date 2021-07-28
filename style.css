@@ -1,11 +1,13 @@
 .grid{
+    background: grey;
     display:grid;
     gap:5px;
-    height:50vh;
-    grid-template-columns:repeat(4,1fr);
-    grid-template-rows:repeat(4,1fr);
-    place-items:stretch center;
-    /*justify-items는 수평(가로), align-items는 세로(수직) place-itmes는 y/x*/
+    height:250vh;
+    grid-template-columns:repeat(4,100px);
+    grid-template-rows:repeat(4,100px);
+    place-content: end center;
+    /*justify-content는 모든 grid를 수평적으로 움직임 align-content는 수직적
+    place-items는 각 사각형 하나하나에 어떤 걸 적용하는지에 관함 place-content는 모든 사각형 */
 }
 .header{
     background-color:#2ecc71;
