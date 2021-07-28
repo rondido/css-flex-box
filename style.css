@@ -2,31 +2,26 @@
     display:grid;
     gap:5px;
     height:50vh;
-    grid-template:
-    [header-start]"header header header header" 1fr [header-end]
-    [content-start]"content content content nav" 2fr [content-end]
-    [footer-start]"footer footer footer footer" 1fr [footer-end]  / 1fr 1fr 1fr 1fr
-
-    ;
-
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(4,1fr);
+    place-items:stretch center;
+    /*justify-items는 수평(가로), align-items는 세로(수직) place-itmes는 y/x*/
 }
 .header{
     background-color:#2ecc71;
-    grid-area:header;
+
 }
 
 .content{
     background-color:#3498db;
-    grid-area:content;
+
 }
 
 .nav{
     background-color:#8e44ad;
-    grid-area:nav;
 }
 
 .footer{
     background-color:#f39c12;
-    grid-area:footer;
 }
 
