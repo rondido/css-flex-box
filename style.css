@@ -12,3 +12,11 @@
 .item:nth-child(even){
     background-color:blue;
 }
+/* fit은 빈공간없이 꽉꽉채우고 fill은 빈공간을 계속 생성한다.*/
+.grid:first-child{
+    grid-template-columns:repeat(auto-fill,minmax(100px,1fr));
+}
+
+.grid:last-child{
+    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+}
