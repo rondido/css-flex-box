@@ -1,29 +1,15 @@
 .grid{
-    background: grey;
+    color:white;
     display:grid;
     gap:5px;
-    height:250vh;
     grid-template-columns:repeat(4,100px);
     grid-template-rows:repeat(4,100px);
-    place-content: end center;
-    /*justify-content는 모든 grid를 수평적으로 움직임 align-content는 수직적
-    place-items는 각 사각형 하나하나에 어떤 걸 적용하는지에 관함 place-content는 모든 사각형 */
+    grid-auto-flow:column;
+    grid-auto-columns: 100px;
 }
-.header{
+.item:nth-child(odd){
     background-color:#2ecc71;
-
 }
-
-.content{
-    background-color:#3498db;
-
+.item:nth-child(even){
+    background-color:blue;
 }
-
-.nav{
-    background-color:#8e44ad;
-}
-
-.footer{
-    background-color:#f39c12;
-}
-
